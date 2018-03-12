@@ -1,0 +1,86 @@
+body {
+    background-color: #9E9E9E;
+}
+
+.calculator {
+    border: 1px solid #A0A0A0;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 7px 10px 34px 01px rgba(0, 0, 0, 0.68), inset -1px -4px 12px 0.1px #89847e;
+    /*this controls shadow in and outside div. horizontal offset/inset, vertical offset/inset, blur radius, spread raduis, color(with opacity in rgba case)*/
+}
+
+h6 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.screen {
+    border-radius: 5px;
+    background-color: #A7CEA3;
+    height: 90px;
+    padding: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-shadow: inset 1px 1px 1.2px 0.01px #89847E;
+    position: relative;
+    /*put this here to allow for currentEntry to be positioned properly within this scree*/
+}
+
+#currentEntry {
+    height: 55px;
+    font-size: 60px;
+    margin-top: -10px;
+    margin-right: 5px;
+    text-align: right;
+    position: relative;
+    bottom: 15px;
+    /*the position and bottom properties were needed to position this currentEntry properly within the screen*/
+}
+
+#allEntry {
+    height: 30px;
+    font-size: 20px;
+    opacity: 0.9;
+    margin-right: 5px;
+    margin-top: 0px;
+    text-align: right;
+    
+}
+
+.buttons {
+
+}
+
+button {
+    height: 45px;
+    width: 52px;
+    margin: 6px;
+    background-color: #A0A0A0;
+    box-shadow: 0.7px 1px 5px 0px rgba(0, 0, 0, 0.68), inset -0.01px -0.06px 1.2px 0.01px #89847e;
+}
+
+button:active {
+    transform: translate(0.7px, 1px);
+    box-shadow: none;
+}
+
+.redButton {
+    background-color: #CC0000;
+}
+
+#zeroButton {
+    width: 120px;
+}
+
+#equalsButton {
+    height: 103px;
+    margin-top: -51px;
+}
